@@ -1,3 +1,4 @@
+from game import goods, purchase, sale
 
 person = {
     'name': '',
@@ -43,3 +44,7 @@ print("Your person:\n Name: " + str(person['name'])
       + "\n     Eloquence: " + str(person['skills']['eloquence'])
       + "\n     Agility: " + str(person['skills']['agility']))
 
+purchase(person)
+sale(person)
+
+print('ДЕНЕГ СТАЛО ', person['money'])
