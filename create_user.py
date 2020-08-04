@@ -4,8 +4,8 @@ person = {
     'name': '',
     'money': 1000,
     'cargo': {},
-#    'level': 1,
-#   'experience': 0,
+    # 'level': 1,
+    # 'experience': 0,
     'skills': {
         'luck': 0,
         'eloquence': 0,
@@ -19,7 +19,7 @@ print("You have 7 skill points")
 skills_count = 7
 skills_used = 0
 print("Please, choose your skills:")
-while skills_count!= skills_used:
+while skills_count != skills_used:
     print("Points left - " + str(skills_count - skills_used))
     print("1. Luck - " + str(person["skills"]["luck"]))
     print("2. Eloquence - " + str(person["skills"]["eloquence"]))
@@ -28,7 +28,7 @@ while skills_count!= skills_used:
     selected_skill = int(input())
     if selected_skill == 1:
         person["skills"]["luck"] += 1
-        skills_used+=1
+        skills_used += 1
     elif selected_skill == 2:
         person["skills"]["eloquence"] += 1
         skills_used += 1
@@ -47,4 +47,4 @@ print("Your person:\n Name: " + str(person['name'])
 purchase(person)
 sale(person)
 
-print('ДЕНЕГ СТАЛО ', person['money'])
+print('MONEY BECAME', person['money'])
